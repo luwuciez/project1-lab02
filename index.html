@@ -5,76 +5,65 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Metrolics Landing Page</title>
   </head>
+
   <body>
-    <header>
-      <div>
-        <span>Metrolics</span>
-        <img src="icon.png" alt="Metrolics logo" width="16px" height="16px" />
+    <header class="menu">
+      <div class="menu__logo">
+        <span class="menu__text">Metrolics</span>
+        <img
+          class="menu__icon"
+          src="icon.png"
+          alt="Metrolics logo"
+          width="16px"
+          height="16px"
+        />
       </div>
-      <nav>
-        <ul>
-          <li>
-            <a href="">
-              <div>
-                <h5>Home</h5>
-              </div>
-            </a>
+      <nav class="menu__navigation">
+        <ul class="menu__list">
+          <li class="menu__item">
+            <a class="menu__link menu__link--home" href=""> Home </a>
           </li>
-          <li>
-            <a href="">
-              <div>
-                <h5>Portfolio</h5>
-              </div>
-            </a>
+          <li class="menu__item">
+            <a class="menu__link menu__link--portfolio" href=""> Portfolio </a>
           </li>
-          <li>
-            <a href="">
-              <div>
-                <h5>Blog</h5>
-              </div>
-            </a>
+          <li class="menu__item">
+            <a class="menu__link menu__link--blog" href=""> Blog </a>
           </li>
-          <li>
-            <a href="">
-              <div>
-                <h5>Quo Vadis?</h5>
-              </div>
-            </a>
+          <li class="menu__item">
+            <a class="menu__link menu__link--vadis" href=""> Quo Vadis? </a>
           </li>
-          <li>
-            <a href="">
-              <div>
-                <h5>Let's Chat</h5>
-              </div>
-            </a>
+          <li class="menu__item">
+            <a class="menu__link menu__link--chat" href=""> Let's Chat </a>
           </li>
         </ul>
       </nav>
     </header>
 
-    <section>
-      <div>
-        <div>Metro Style</div>
-        <div>Quick on the feet</div>
-        <div>Metro Styling reinvented</div>
+    <section class="banner">
+      <div class="banner__wrapper">
+        <div class="banner__flag banner__flag--blue">Metro Style</div>
+        <div class="banner__flag banner__flag--red">Quick on the feet</div>
+        <div class="banner__flag banner__flag--yellow">
+          Metro Styling reinvented
+        </div>
         <!-- set banner image as background -->
       </div>
     </section>
 
-    <section>
-      <h1>
-        Hey folks! We are the <em>Metrolics</em> team.<br />
-        It Sports a responsive layout with a mobile layout.
-      </h1>
-    </section>
+    <main class="content">
+      <section class="intro">
+        <h1 class="intro__text">
+          Hey folks! We are the <em>Metrolics</em> team.<br />
+          It Sports a responsive layout with a mobile layout.
+        </h1>
+      </section>
 
-    <main>
-      <section>
-        <h2>Things That We Do</h2>
-        <h6>Ask us what we can do for you</h6>
+      <section class="services">
+        <h2 class="section__heading">Things That We Do</h2>
+        <h6 class="section__subheading">Ask us what we can do for you</h6>
         <div>
-          <ul>
-            <li>
+          <ul class="services__list">
+            <li class="services__item">
               <div>
                 <img src="icon.png" />
                 <h3>Web Solutions</h3>
@@ -86,7 +75,7 @@
                 </p>
               </div>
             </li>
-            <li>
+            <li class="services__item">
               <div>
                 <img src="icon.png" />
                 <h3>Photography</h3>
@@ -98,7 +87,7 @@
                 </p>
               </div>
             </li>
-            <li>
+            <li class="services__item">
               <div>
                 <img src="icon.png" />
                 <h3>App Development</h3>
@@ -110,7 +99,7 @@
                 </p>
               </div>
             </li>
-            <li>
+            <li class="services__item">
               <div>
                 <img src="icon.png" />
                 <h3>UX Design</h3>
@@ -126,128 +115,128 @@
         </div>
       </section>
 
-      <section>
-        <h2>What's Up Lately?</h2>
-        <h6>Read up on our latest work</h6>
-        <div>
-          <article>
-            <div>
+      <section class="blog">
+        <h2 class="section__heading">What's Up Lately?</h2>
+        <h6 class="section__subheading">Read up on our latest work</h6>
+        <div class="blog__container">
+          <article class="blog__item blog__item--one">
+            <div class="blog__date">
               <time datetime="2025-01-29">29 Jan. 2025</time>
             </div>
-            <div>
-              <h3>Sample Image Post</h3>
-              <h6>Photography</h6>
-              <img src="icon.png" />
+            <div class="blog__wrapper">
+              <h3 class="blog__title">Sample Image Post</h3>
+              <h6 class="blog__desc">Photography</h6>
+              <img class="blog__img" src="icon.png" />
             </div>
           </article>
-          <article>
-            <div>
+          <article class="blog__item blog__item--two">
+            <div class="blog__date">
               <time datetime="2025-01-29">29 Jan. 2025</time>
             </div>
-            <div>
-              <h3>Sample Image Post</h3>
-              <h6>Photography</h6>
-              <img src="icon.png" />
+            <div class="blog__wrapper">
+              <h3 class="blog__title">Sample Image Post</h3>
+              <h6 class="blog__desc">Photography</h6>
+              <img class="blog__img" src="icon.png" />
             </div>
           </article>
-          <article>
-            <div>
+          <article class="blog__item blog__item--three">
+            <div class="blog__date">
               <time datetime="2025-01-29">29 Jan. 2025</time>
             </div>
-            <div>
-              <h3>Sample Image Post</h3>
-              <h6>Photography</h6>
-              <img src="icon.png" />
+            <div class="blog__wrapper">
+              <h3 class="blog__title">Sample Image Post</h3>
+              <h6 class="blog__desc">Photography</h6>
+              <img class="blog__img" src="icon.png" />
             </div>
           </article>
         </div>
       </section>
 
-      <section>
-        <h2>Our Best Work. Period.</h2>
-        <h6>Client happy? We are happy.</h6>
-        <ul>
-          <li>
-            <a href="">
+      <section class="portfolio">
+        <h2 class="section__heading">Our Best Work. Period.</h2>
+        <h6 class="section__subheading">Client happy? We are happy.</h6>
+        <ul class="portfolio__list">
+          <li class="portfolio__item">
+            <a class="portfolio__link" href="">
               <img src="icon.png" alt="Work description" />
             </a>
           </li>
-          <li>
-            <a href="">
+          <li class="portfolio__item">
+            <a class="portfolio__link" href="">
               <img src="icon.png" alt="Work description" />
             </a>
           </li>
-          <li>
-            <a href="">
+          <li class="portfolio__item">
+            <a class="portfolio__link" href="">
               <img src="icon.png" alt="Work description" />
             </a>
           </li>
-          <li>
-            <a href="">
+          <li class="portfolio__item">
+            <a class="portfolio__link" href="">
               <img src="icon.png" alt="Work description" />
             </a>
           </li>
-          <li>
-            <a href="">
+          <li class="portfolio__item">
+            <a class="portfolio__link" href="">
               <img src="icon.png" alt="Work description" />
             </a>
           </li>
-          <li>
-            <a href="">
+          <li class="portfolio__item">
+            <a class="portfolio__link" href="">
               <img src="icon.png" alt="Work description" />
             </a>
           </li>
         </ul>
       </section>
 
-      <section>
-        <h2>Satisfaction Guaranteed</h2>
-        <h6>
+      <section class="clients">
+        <h2 class="section__heading">Satisfaction Guaranteed</h2>
+        <h6 class="section__subheading">
           Past clients stoked with our work. We are not happy until YOU are
           happy.
         </h6>
-        <div>
-          <div>
-            <img src="icon.png" alt="Krita logo" />
+        <div class="clients__container">
+          <div class="clients__wrapper">
+            <img class="clients__img" src="icon.png" alt="Krita logo" />
           </div>
-          <div>
-            <img src="icon.png" alt="Inkscape logo" />
+          <div class="clients__wrapper">
+            <img class="clients__img" src="icon.png" alt="Inkscape logo" />
           </div>
-          <div>
-            <img src="icon.png" alt="Godot logo" />
+          <div class="clients__wrapper">
+            <img class="clients__img" src="icon.png" alt="Godot logo" />
           </div>
-          <div>
-            <img src="icon.png" alt="Blender logo" />
+          <div class="clients__wrapper">
+            <img class="clients__img" src="icon.png" alt="Blender logo" />
           </div>
-          <div>
-            <img src="icon.png" alt="Penpot logo" />
+          <div class="clients__wrapper">
+            <img class="clients__img" src="icon.png" alt="Penpot logo" />
           </div>
         </div>
       </section>
     </main>
 
     <footer>
-      <div>
-        <img src="icon.png" alt="Alf's portrait" />
-        <p>
+      <section class="bio">
+        <img class="bio__img" src="icon.png" alt="Alf's portrait" />
+        <p class="bio__text">
           Alf has over 10 years experience in the industry. He is our Creative
           Director, digital designer, web designer and front-end developer. He
           is also pretty good with a sketchbook. Before starting the company
           Peewee worked as a designer and studio manager for a design house who
           boasted a number of big name clients.
         </p>
-      </div>
+      </section>
 
-      <div>
-        <div>
-          <h3>About Us</h3>
-          <p>
+      <section class="">
+        <div class="about-us">
+          <h3 class="about-us__heading">About Us</h3>
+          <p class="about-us__text">
             Minions ipsum potatoooo potatoooo uuuhhh. Chasy poulet tikka masala
             jiji wiiiii hahaha po kass tulaliloo potatoooo. Bee do bee do bee do
             chasy ti aamoo! Po kass daa bee do bee do bee do po kass wiiiii butt
             chasy.
           </p>
-          <p>
+          <p class="about-us__text">
             Pepete uuuhhh hahaha gelatooo belloo! Bananaaaa aaaaaah butt
             potatoooo hana dul sae butt. Hahaha wiiiii ti aamoo! Ti aamoo!
             Baboiii jeje. Hahaha gelatooo daa me want bananaaa! Underweaaar
@@ -255,23 +244,23 @@
           </p>
         </div>
 
-        <div>
-          <h3>Instagram</h3>
-          <div>
-            <img src="icon.png" />
-            <img src="icon.png" />
-            <img src="icon.png" />
-            <img src="icon.png" />
-            <img src="icon.png" />
-            <img src="icon.png" />
-            <img src="icon.png" />
-            <img src="icon.png" />
+        <div class="instagram">
+          <h3 class="instagram__heading">Instagram</h3>
+          <div class="instagram__grid">
+            <img class="instagram__post" src="icon.png" />
+            <img class="instagram__post" src="icon.png" />
+            <img class="instagram__post" src="icon.png" />
+            <img class="instagram__post" src="icon.png" />
+            <img class="instagram__post" src="icon.png" />
+            <img class="instagram__post" src="icon.png" />
+            <img class="instagram__post" src="icon.png" />
+            <img class="instagram__post" src="icon.png" />
           </div>
         </div>
 
-        <div>
-          <h3>What's New on Mastodon</h3>
-          <p>
+        <div class="mastodon">
+          <h3 class="mastodon__heading">What's New on Mastodon</h3>
+          <p class="mastodon__text">
             <a href="">@Minions</a> - ipsum banana potatoooo uuuhhh. Chasy
             poulet tikka masala jiji wiiiii hahaha tulaliloo potatoooo. Bee do
             bee do bee do chasy ti aamoo! Po kass daa b ee do bee do bee do po
@@ -280,7 +269,7 @@
             aamoo! Ti aamoo! Baboiii jeje. Hahaha gelatooo daa me want bananaaa!
             Underweaaar potatoooo tank yuuu! Aaaaaah potatoooo poopayee.
           </p>
-          <p>
+          <p class="mastodon__text">
             <a href="">@Minions</a> - ipsum banana potatoooo uuuhhh. Chasy
             poulet tikka masala jiji wiiiii hahaha tulaliloo potatoooo. Bee do
             bee do bee do chasy ti aamoo! Po kass daa b ee do bee do bee do po
@@ -289,7 +278,7 @@
             aamoo! Ti aamoo! Baboiii jeje. Hahaha gelatooo daa me want bananaaa!
             Underweaaar potatoooo tank yuuu! Aaaaaah potatoooo poopayee.
           </p>
-          <p>
+          <p class="mastodon__text">
             <a href="">@Minions</a> - ipsum banana potatoooo uuuhhh. Chasy
             poulet tikka masala jiji wiiiii hahaha tulaliloo potatoooo. Bee do
             bee do bee do chasy ti aamoo! Po kass daa b ee do bee do bee do po
@@ -300,26 +289,27 @@
           </p>
         </div>
 
-        <div>
-          <h3>Track us!</h3>
-          <div>
-            <a href=""></a>
-            <a href=""></a>
-            <a href=""></a>
-            <a href=""></a>
-            <a href=""></a>
+        <div class="socials">
+          <h3 class="socials__heading">Track us!</h3>
+          <div class="socials__container">
+            <a class="socials__btn" href=""></a>
+            <a class="socials__btn" href=""></a>
+            <a class="socials__btn" href=""></a>
+            <a class="socials__btn" href=""></a>
+            <a class="socials__btn" href=""></a>
           </div>
-          <form action="" method="get">
+          <form action="" method="get" class="socials__form">
             <input
               type="email"
               name="email"
               id="email"
+              class="socials__input"
               placeholder="Enter your Email..."
             />
-            <input type="submit" value="" />
+            <input type="submit" class="socials__submit" value="" />
           </form>
         </div>
-      </div>
+      </section>
     </footer>
   </body>
 </html>
