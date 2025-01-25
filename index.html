@@ -1,293 +1,329 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Metrolics Landing Page</title>
-  </head>
 
-  <body>
-    <header class="menu">
-      <div class="menu__logo">
-        <span class="menu__text">Metrolics</span>
-        <img class="menu__icon" src="icon.png" alt="Metrolics logo" width="16" height="16" />
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Metrolics Landing Page</title>
+</head>
+
+<body>
+  <header class="page__header">
+    <div class="logo">
+      <span class="logo__text"> Metrolics </span>
+      <img class="logo__icon" src="/" alt="Metrolics logo">
+    </div>
+    <nav class="header__nav">
+      <!-- nth selector in css for diff colours -->
+      <div class="nav__item">
+        <a class="nav__item__link" href=""> Home </a>
       </div>
-      <nav class="menu__navigation">
-        <ul class="menu__list">
-          <li class="menu__item">
-            <a class="menu__link menu__link--home" href=""> Home </a>
-          </li>
-          <li class="menu__item">
-            <a class="menu__link menu__link--portfolio" href=""> Portfolio </a>
-          </li>
-          <li class="menu__item">
-            <a class="menu__link menu__link--blog" href=""> Blog </a>
-          </li>
-          <li class="menu__item">
-            <a class="menu__link menu__link--vadis" href=""> Quo Vadis? </a>
-          </li>
-          <li class="menu__item">
-            <a class="menu__link menu__link--chat" href=""> Let's Chat </a>
-          </li>
-        </ul>
-      </nav>
-    </header>
+      <div class="nav__item">
+        <a class="nav__item__link" href=""> Portfolio </a>
+      </div>
+      <div class="nav__item">
+        <a class="nav__item__link" href=""> Blog </a>
+      </div>
+      <div class="nav__item">
+        <a class="nav__item__link" href=""> Quo Vadis? </a>
+      </div>
+      <div class="nav__item">
+        <a class="nav__item__link" href=""> Let's Chat </a>
+      </div>
+    </nav>
+  </header>
 
-    <section class="banner">
-      <div class="banner__wrapper">
-        <div class="banner__flag banner__flag--blue">Metro Style</div>
-        <div class="banner__flag banner__flag--red">Quick on the feet</div>
-        <div class="banner__flag banner__flag--yellow">Metro Styling reinvented</div>
-        <!-- set banner image as background -->
+  <div class="banner__container">
+    <div class="banner__wrapper">
+      <!-- Note: nth selector in css for diff colours -->
+      <!-- Note: set banner image as background in css -->
+      <div class="banner__flag"> Metro Style </div>
+      <div class="banner__flag"> Quick on the feet </div>
+      <div class="banner__flag"> Metro Styling reinvented </div>
+    </div>
+  </div>
+
+  <main class="page__content">
+    <section class="intro">
+      <h1 class="intro__text">
+        Hey folks! We are the <em>Metrolics</em> team.<br>
+        It Sports a responsive layout with a mobile layout.
+      </h1>
+    </section>
+
+    <section class="services">
+      <h2 class="section__heading">
+        Things That We Do
+      </h2>
+      <h6 class="section__subheading">
+        Ask us what we can do for you
+      </h6>
+
+      <div class="services__container">
+        <div class="services__item">
+          <img class="services__item__icon" src="icon.png" alt="">
+          <h3 class="services__item__heading">Web Solutions</h3>
+          <p class="services__item__text">
+            We are a fairly small, flexible design studio that designs for print and web. We work
+            flexibly with clients to fulfil their design needs. We are confident you will be pleased
+            with the results.
+          </p>
+        </div>
+
+        <div class="services__item">
+          <img class="services__item__icon" src="icon.png" alt="">
+          <h3 class="services__item__heading">Photography</h3>
+          <p class="services__item__text">
+            We are a fairly small, flexible design studio that designs for print and web. We work
+            flexibly with clients to fulfil their design needs. We are confident you will be pleased
+            with the results.
+          </p>
+        </div>
+
+        <div class="services__item">
+          <img class="services__item__icon" src="icon.png" alt="">
+          <h3 class="services__item__heading">App Development</h3>
+          <p class="services__item__text">
+            We are a fairly small, flexible design studio that designs for print and web. We work
+            flexibly with clients to fulfil their design needs. We are confident you will be pleased
+            with the results.
+          </p>
+        </div>
+
+        <div class="services__item">
+          <img class="services__item__icon" src="icon.png" alt="">
+          <h3 class="services__item__heading">UX Design</h3>
+          <p class="services__item__text">
+            We are a fairly small, flexible design studio that designs for print and web. We work
+            flexibly with clients to fulfil their design needs. We are confident you will be pleased
+            with the results.
+          </p>
+        </div>
       </div>
     </section>
 
-    <main class="content">
-      <section class="intro">
-        <h1 class="intro__text">
-          Hey folks! We are the <em>Metrolics</em> team.<br />
-          It Sports a responsive layout with a mobile layout.
-        </h1>
-      </section>
+    <section class="blog">
+      <h2 class="section__heading">
+        What's Up Lately?
+      </h2>
+      <h6 class="section__subheading">
+        Read up on our latest work
+      </h6>
 
-      <section class="services">
-        <h2 class="section__heading">Things That We Do</h2>
-        <h6 class="section__subheading">Ask us what we can do for you</h6>
-        <div>
-          <ul class="services__list">
-            <li class="services__item">
-              <div>
-                <img src="icon.png" alt="" />
-                <h3>Web Solutions</h3>
-                <p>
-                  We are a fairly small, flexible design studio that designs for print and web. We work
-                  flexibly with clients to fulfil their design needs. We are confident you will be pleased
-                  with the results.
-                </p>
-              </div>
-            </li>
-            <li class="services__item">
-              <div>
-                <img src="icon.png" alt="" />
-                <h3>Photography</h3>
-                <p>
-                  We are a fairly small, flexible design studio that designs for print and web. We work
-                  flexibly with clients to fulfil their design needs. We are confident you will be pleased
-                  with the results.
-                </p>
-              </div>
-            </li>
-            <li class="services__item">
-              <div>
-                <img src="icon.png" alt="" />
-                <h3>App Development</h3>
-                <p>
-                  We are a fairly small, flexible design studio that designs for print and web. We work
-                  flexibly with clients to fulfil their design needs. We are confident you will be pleased
-                  with the results.
-                </p>
-              </div>
-            </li>
-            <li class="services__item">
-              <div>
-                <img src="icon.png" alt="" />
-                <h3>UX Design</h3>
-                <p>
-                  We are a fairly small, flexible design studio that designs for print and web. We work
-                  flexibly with clients to fulfil their design needs. We are confident you will be pleased
-                  with the results.
-                </p>
-              </div>
-            </li>
-          </ul>
+      <div class="blog__container">
+        <article class="blog__item">
+          <div class="blog__item__date">
+            <em class="blog__item__date blog__item__date--lg">29</em> Jan. 2025
+          </div>
+          <div class="blog__item__wrapper">
+            <h3 class="blog__item__title">Sample Image Post</h3>
+            <h6 class="blog__item__desc">Photography</h6>
+            <img class="blog__item__icon" src="icon.png" alt="">
+          </div>
+        </article>
+
+        <article class="blog__item">
+          <div class="blog__item__date">
+            <em class="blog__item__date blog__item__date--lg">29</em> Jan. 2025
+          </div>
+          <div class="blog__item__wrapper">
+            <h3 class="blog__item__title">Sample Image Post</h3>
+            <h6 class="blog__item__desc">Photography</h6>
+            <img class="blog__item__icon" src="icon.png" alt="">
+          </div>
+        </article>
+
+        <article class="blog__item">
+          <div class="blog__item__date">
+            <em class="blog__item__date blog__item__date--lg">29</em> Jan. 2025
+          </div>
+          <div class="blog__item__wrapper">
+            <h3 class="blog__item__title">Sample Image Post</h3>
+            <h6 class="blog__item__desc">Photography</h6>
+            <img class="blog__item__icon" src="icon.png" alt="">
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="portfolio">
+      <h2 class="section__heading">
+        Our Best Work. Period.
+      </h2>
+      <h6 class="section__subheading">
+        Client happy? We are happy.
+      </h6>
+
+      <div class="portfolio__container">
+        <!-- Note: refer to https://www.youtube.com/watch?v=hr4JiDr7Aec for css tutorial -->
+        <a class="portfolio__item" href="">
+          <img class="portfolio__item__img" src="icon.png" alt="">
+          <div class="portfolio__item__wrapper">
+            <h3 class="portfolio__item__title">Sample Image Post</h3>
+            <h6 class="portfolio__item__desc">Photography</h6>
+            <img class="portfolio__item__icon" src="icon.png" alt="">
+          </div>
+        </a>
+
+        <a class="portfolio__item" href="">
+          <img class="portfolio__item__img" src="icon.png" alt="">
+          <div class="portfolio__item__wrapper">
+            <h3 class="portfolio__item__title">Sample Image Post</h3>
+            <h6 class="portfolio__item__desc">Photography</h6>
+            <img class="portfolio__item__icon" src="icon.png" alt="">
+          </div>
+        </a>
+
+        <a class="portfolio__item" href="">
+          <img class="portfolio__item__img" src="icon.png" alt="">
+          <div class="portfolio__item__wrapper">
+            <h3 class="portfolio__item__title">Sample Image Post</h3>
+            <h6 class="portfolio__item__desc">Photography</h6>
+            <img class="portfolio__item__icon" src="icon.png" alt="">
+          </div>
+        </a>
+
+        <a class="portfolio__item" href="">
+          <img class="portfolio__item__img" src="icon.png" alt="">
+          <div class="portfolio__item__wrapper">
+            <h3 class="portfolio__item__title">Sample Image Post</h3>
+            <h6 class="portfolio__item__desc">Photography</h6>
+            <img class="portfolio__item__icon" src="icon.png" alt="">
+          </div>
+        </a>
+
+        <a class="portfolio__item" href="">
+          <img class="portfolio__item__img" src="icon.png" alt="">
+          <div class="portfolio__item__wrapper">
+            <h3 class="portfolio__item__title">Sample Image Post</h3>
+            <h6 class="portfolio__item__desc">Photography</h6>
+            <img class="portfolio__item__icon" src="icon.png" alt="">
+          </div>
+        </a>
+
+        <a class="portfolio__item" href="">
+          <img class="portfolio__item__img" src="icon.png" alt="">
+          <div class="portfolio__item__wrapper">
+            <h3 class="portfolio__item__title">Sample Image Post</h3>
+            <h6 class="portfolio__item__desc">Photography</h6>
+            <img class="portfolio__item__icon" src="icon.png" alt="">
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <section class="clients">
+      <h2 class="section__heading">
+        Satisfaction Guaranteed
+      </h2>
+      <h6 class="section__subheading">
+        Past clients stoked with our work. We are not happy until YOU are happy.
+      </h6>
+
+      <div class="clients__container">
+        <div class="clients__wrapper">
+          <img class="clients__img" src="icon.png" alt="Krita logo">
         </div>
-      </section>
-
-      <section class="blog">
-        <h2 class="section__heading">What's Up Lately?</h2>
-        <h6 class="section__subheading">Read up on our latest work</h6>
-        <div class="blog__container">
-          <article class="blog__item blog__item--one">
-            <div class="blog__date">
-              <time datetime="2025-01-29">29 Jan. 2025</time>
-            </div>
-            <div class="blog__wrapper">
-              <h3 class="blog__title">Sample Image Post</h3>
-              <h6 class="blog__desc">Photography</h6>
-              <img class="blog__img" src="icon.png" alt="" />
-            </div>
-          </article>
-          <article class="blog__item blog__item--two">
-            <div class="blog__date">
-              <time datetime="2025-01-29">29 Jan. 2025</time>
-            </div>
-            <div class="blog__wrapper">
-              <h3 class="blog__title">Sample Image Post</h3>
-              <h6 class="blog__desc">Photography</h6>
-              <img class="blog__img" src="icon.png" alt="" />
-            </div>
-          </article>
-          <article class="blog__item blog__item--three">
-            <div class="blog__date">
-              <time datetime="2025-01-29">29 Jan. 2025</time>
-            </div>
-            <div class="blog__wrapper">
-              <h3 class="blog__title">Sample Image Post</h3>
-              <h6 class="blog__desc">Photography</h6>
-              <img class="blog__img" src="icon.png" alt="" />
-            </div>
-          </article>
+        <div class="clients__wrapper">
+          <img class="clients__img" src="icon.png" alt="Inkscape logo">
         </div>
-      </section>
-
-      <section class="portfolio">
-        <h2 class="section__heading">Our Best Work. Period.</h2>
-        <h6 class="section__subheading">Client happy? We are happy.</h6>
-        <ul class="portfolio__list">
-          <li class="portfolio__item">
-            <a class="portfolio__link" href="">
-              <img src="icon.png" alt="Work description" />
-            </a>
-          </li>
-          <li class="portfolio__item">
-            <a class="portfolio__link" href="">
-              <img src="icon.png" alt="Work description" />
-            </a>
-          </li>
-          <li class="portfolio__item">
-            <a class="portfolio__link" href="">
-              <img src="icon.png" alt="Work description" />
-            </a>
-          </li>
-          <li class="portfolio__item">
-            <a class="portfolio__link" href="">
-              <img src="icon.png" alt="Work description" />
-            </a>
-          </li>
-          <li class="portfolio__item">
-            <a class="portfolio__link" href="">
-              <img src="icon.png" alt="Work description" />
-            </a>
-          </li>
-          <li class="portfolio__item">
-            <a class="portfolio__link" href="">
-              <img src="icon.png" alt="Work description" />
-            </a>
-          </li>
-        </ul>
-      </section>
-
-      <section class="clients">
-        <h2 class="section__heading">Satisfaction Guaranteed</h2>
-        <h6 class="section__subheading">
-          Past clients stoked with our work. We are not happy until YOU are happy.
-        </h6>
-        <div class="clients__container">
-          <div class="clients__wrapper">
-            <img class="clients__img" src="icon.png" alt="Krita logo" />
-          </div>
-          <div class="clients__wrapper">
-            <img class="clients__img" src="icon.png" alt="Inkscape logo" />
-          </div>
-          <div class="clients__wrapper">
-            <img class="clients__img" src="icon.png" alt="Godot logo" />
-          </div>
-          <div class="clients__wrapper">
-            <img class="clients__img" src="icon.png" alt="Blender logo" />
-          </div>
-          <div class="clients__wrapper">
-            <img class="clients__img" src="icon.png" alt="Penpot logo" />
-          </div>
+        <div class="clients__wrapper">
+          <img class="clients__img" src="icon.png" alt="Godot logo">
         </div>
-      </section>
-    </main>
+        <div class="clients__wrapper">
+          <img class="clients__img" src="icon.png" alt="Blender logo">
+        </div>
+        <div class="clients__wrapper">
+          <img class="clients__img" src="icon.png" alt="Penpot logo">
+        </div>
+      </div>
+    </section>
+  </main>
 
-    <footer>
-      <section class="bio">
-        <img class="bio__img" src="icon.png" alt="Alf's portrait" />
-        <p class="bio__text">
-          Alf has over 10 years experience in the industry. He is our Creative Director, digital designer, web
-          designer and front-end developer. He is also pretty good with a sketchbook. Before starting the
-          company Peewee worked as a designer and studio manager for a design house who boasted a number of
-          big name clients.
+  <footer class="page__footer">
+    <div class="bio__container">
+      <img class="bio__img" src="icon.png" alt="Alf's portrait">
+      <p class="bio__text">
+        Alf has over 10 years experience in the industry. He is our Creative Director, digital designer, web
+        designer and front-end developer. He is also pretty good with a sketchbook. Before starting the
+        company Peewee worked as a designer and studio manager for a design house who boasted a number of
+        big name clients.
+      </p>
+    </div>
+
+    <div class="footer__container">
+      <div class="about">
+        <h3 class="about__heading">About Us</h3>
+        <p class="about__text">
+          Minions ipsum potatoooo potatoooo uuuhhh. Chasy poulet tikka masala jiji wiiiii hahaha po kass
+          tulaliloo potatoooo. Bee do bee do bee do chasy ti aamoo! Po kass daa bee do bee do bee do po kass
+          wiiiii butt chasy.
         </p>
-      </section>
+        <p class="about__text">
+          Pepete uuuhhh hahaha gelatooo belloo! Bananaaaa aaaaaah butt potatoooo hana dul sae butt. Hahaha
+          wiiiii ti aamoo! Ti aamoo! Baboiii jeje. Hahaha gelatooo daa me want bananaaa! Underweaaar
+          potatoooo tank yuuu! Aaaaaah potatoooo poopayee.
+        </p>
+      </div>
 
-      <section class="">
-        <div class="about-us">
-          <h3 class="about-us__heading">About Us</h3>
-          <p class="about-us__text">
-            Minions ipsum potatoooo potatoooo uuuhhh. Chasy poulet tikka masala jiji wiiiii hahaha po kass
-            tulaliloo potatoooo. Bee do bee do bee do chasy ti aamoo! Po kass daa bee do bee do bee do po kass
-            wiiiii butt chasy.
-          </p>
-          <p class="about-us__text">
-            Pepete uuuhhh hahaha gelatooo belloo! Bananaaaa aaaaaah butt potatoooo hana dul sae butt. Hahaha
-            wiiiii ti aamoo! Ti aamoo! Baboiii jeje. Hahaha gelatooo daa me want bananaaa! Underweaaar
-            potatoooo tank yuuu! Aaaaaah potatoooo poopayee.
-          </p>
+      <div class="instagram">
+        <h3 class="instagram__heading">Instagram</h3>
+        <div class="instagram__grid">
+          <!-- Note: use flexbox -->
+          <img class="instagram__post" src="icon.png" alt="">
+          <img class="instagram__post" src="icon.png" alt="">
+          <img class="instagram__post" src="icon.png" alt="">
+          <img class="instagram__post" src="icon.png" alt="">
+          <img class="instagram__post" src="icon.png" alt="">
+          <img class="instagram__post" src="icon.png" alt="">
+          <img class="instagram__post" src="icon.png" alt="">
+          <img class="instagram__post" src="icon.png" alt="">
         </div>
+      </div>
 
-        <div class="instagram">
-          <h3 class="instagram__heading">Instagram</h3>
-          <div class="instagram__grid">
-            <img class="instagram__post" src="icon.png" alt="" />
-            <img class="instagram__post" src="icon.png" alt="" />
-            <img class="instagram__post" src="icon.png" alt="" />
-            <img class="instagram__post" src="icon.png" alt="" />
-            <img class="instagram__post" src="icon.png" alt="" />
-            <img class="instagram__post" src="icon.png" alt="" />
-            <img class="instagram__post" src="icon.png" alt="" />
-            <img class="instagram__post" src="icon.png" alt="" />
-          </div>
-        </div>
+      <div class="mastodon">
+        <h3 class="mastodon__heading">What's New on Mastodon</h3>
+        <p class="mastodon__text">
+          <a href="">@Minions</a> - ipsum banana potatoooo uuuhhh. Chasy poulet tikka masala jiji wiiiii
+          hahaha tulaliloo potatoooo. Bee do bee do bee do chasy ti aamoo! Po kass daa b ee do bee do bee do
+          po kass wiiiii butt chasy. Pepete uuuhhh hahaha gelatooo belloo! ananaaaa aaaaaah butt potatoooo
+          hana dul sae butt. Hahaha wiiiii ti aamoo! Ti aamoo! Baboiii jeje. Hahaha gelatooo daa me want
+          bananaaa! Underweaaar potatoooo tank yuuu! Aaaaaah potatoooo poopayee.
+        </p>
+        <p class="mastodon__text">
+          <a href="">@Minions</a> - ipsum banana potatoooo uuuhhh. Chasy poulet tikka masala jiji wiiiii
+          hahaha tulaliloo potatoooo. Bee do bee do bee do chasy ti aamoo! Po kass daa b ee do bee do bee do
+          po kass wiiiii butt chasy. Pepete uuuhhh hahaha gelatooo belloo! ananaaaa aaaaaah butt potatoooo
+          hana dul sae butt. Hahaha wiiiii ti aamoo! Ti aamoo! Baboiii jeje. Hahaha gelatooo daa me want
+          bananaaa! Underweaaar potatoooo tank yuuu! Aaaaaah potatoooo poopayee.
+        </p>
+        <p class="mastodon__text">
+          <a href="">@Minions</a> - ipsum banana potatoooo uuuhhh. Chasy poulet tikka masala jiji wiiiii
+          hahaha tulaliloo potatoooo. Bee do bee do bee do chasy ti aamoo! Po kass daa b ee do bee do bee do
+          po kass wiiiii butt chasy. Pepete uuuhhh hahaha gelatooo belloo! ananaaaa aaaaaah butt potatoooo
+          hana dul sae butt. Hahaha wiiiii ti aamoo! Ti aamoo! Baboiii jeje. Hahaha gelatooo daa me want
+          bananaaa! Underweaaar potatoooo tank yuuu! Aaaaaah potatoooo poopayee.
+        </p>
+      </div>
 
-        <div class="mastodon">
-          <h3 class="mastodon__heading">What's New on Mastodon</h3>
-          <p class="mastodon__text">
-            <a href="">@Minions</a> - ipsum banana potatoooo uuuhhh. Chasy poulet tikka masala jiji wiiiii
-            hahaha tulaliloo potatoooo. Bee do bee do bee do chasy ti aamoo! Po kass daa b ee do bee do bee do
-            po kass wiiiii butt chasy. Pepete uuuhhh hahaha gelatooo belloo! ananaaaa aaaaaah butt potatoooo
-            hana dul sae butt. Hahaha wiiiii ti aamoo! Ti aamoo! Baboiii jeje. Hahaha gelatooo daa me want
-            bananaaa! Underweaaar potatoooo tank yuuu! Aaaaaah potatoooo poopayee.
-          </p>
-          <p class="mastodon__text">
-            <a href="">@Minions</a> - ipsum banana potatoooo uuuhhh. Chasy poulet tikka masala jiji wiiiii
-            hahaha tulaliloo potatoooo. Bee do bee do bee do chasy ti aamoo! Po kass daa b ee do bee do bee do
-            po kass wiiiii butt chasy. Pepete uuuhhh hahaha gelatooo belloo! ananaaaa aaaaaah butt potatoooo
-            hana dul sae butt. Hahaha wiiiii ti aamoo! Ti aamoo! Baboiii jeje. Hahaha gelatooo daa me want
-            bananaaa! Underweaaar potatoooo tank yuuu! Aaaaaah potatoooo poopayee.
-          </p>
-          <p class="mastodon__text">
-            <a href="">@Minions</a> - ipsum banana potatoooo uuuhhh. Chasy poulet tikka masala jiji wiiiii
-            hahaha tulaliloo potatoooo. Bee do bee do bee do chasy ti aamoo! Po kass daa b ee do bee do bee do
-            po kass wiiiii butt chasy. Pepete uuuhhh hahaha gelatooo belloo! ananaaaa aaaaaah butt potatoooo
-            hana dul sae butt. Hahaha wiiiii ti aamoo! Ti aamoo! Baboiii jeje. Hahaha gelatooo daa me want
-            bananaaa! Underweaaar potatoooo tank yuuu! Aaaaaah potatoooo poopayee.
-          </p>
+      <div class="socials">
+        <h3 class="socials__heading">Track us!</h3>
+        <div class="socials__container">
+          <a class="socials__btn" href=""></a>
+          <a class="socials__btn" href=""></a>
+          <a class="socials__btn" href=""></a>
+          <a class="socials__btn" href=""></a>
+          <a class="socials__btn" href=""></a>
         </div>
+        <form class="socials__form" action="#" method="post">
+          <input class="socials__input" type="email" name="email" placeholder="Enter your Email...">
+          <button class="socials__submit" type="submit">
+            <img class="socials__submit__icon" src="/" alt="">
+          </button>
+        </form>
+      </div>
+    </div>
+  </footer>
+</body>
 
-        <div class="socials">
-          <h3 class="socials__heading">Track us!</h3>
-          <div class="socials__container">
-            <a class="socials__btn" href=""></a>
-            <a class="socials__btn" href=""></a>
-            <a class="socials__btn" href=""></a>
-            <a class="socials__btn" href=""></a>
-            <a class="socials__btn" href=""></a>
-          </div>
-          <form action="" method="get" class="socials__form">
-            <input
-              type="email"
-              name="email"
-              id="email"
-              class="socials__input"
-              placeholder="Enter your Email..."
-            />
-            <input type="submit" class="socials__submit" value="" />
-          </form>
-        </div>
-      </section>
-    </footer>
-  </body>
 </html>
