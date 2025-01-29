@@ -1,15 +1,1 @@
-html {
-  color: #000000;
-  font-size: 1em;
-  line-height: 1.4;
-}
 
-/* Tablet screen */
-@media only screen and (min-width: 432px) and (max-width: 632px) {
-
-}
-
-/* Desktop screen */
-@media only screen and (min-width: 632px) {
-
-}
