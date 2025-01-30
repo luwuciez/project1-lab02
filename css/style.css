@@ -4,10 +4,29 @@
   --font-bold: 700;
 }
 
-body {
+h1, h2, h3, h4 {
   font-family: "Ubuntu", sans-serif;
   font-weight: var(--font-reg);
 }
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-weight: var(--font-reg);
+}
+
+/* ============================================================================================================== */
+/* core layout */
+
+.page {
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+img {
+  width: 100%
+}
+
+/* ============================================================================================================== */
 
 /* Small only */
 @media screen and (max-width: 39.9375em) {
