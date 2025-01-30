@@ -14,8 +14,66 @@ body {
   .m-hide {
     display: none;
   }
-}
 
+  .blog {
+    text-align: center;
+    padding: 1rem 0;
+
+  }
+
+  /* headings */
+  .section__heading {
+    color: #494949;
+    font-weight: var(--font-reg);
+    font-family: "Ubuntu", sans-serif;
+  }
+  .section__subheading {
+    color: #a3a3a3;
+    font-weight: var(--font-reg);
+    font-family: "Ubuntu", sans-serif;
+  }
+
+  /* date */
+  .blog__item__date {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #D8605F;
+    color: #ffffff;
+    text-align: center;
+    padding: .75rem 1.5rem;
+
+  }
+  .blog__item__date--day {
+    font-size: 1.5rem;
+    font-weight: var(--font-reg);
+    font-family: "Ubuntu", sans-serif;
+  }
+  .blog__item__date--month,
+  .blog__item__date--year {
+    font-size: .75rem;
+    font-weight: var(--font-reg);
+    font-family: "Ubuntu", sans-serif;
+  }
+
+  /* blog content */
+  .blog__item {
+    display: grid;
+    position: relative;
+    grid-template-columns: auto 1fr auto;
+
+  }
+  .blog__container {
+    display: grid;
+
+  }
+
+  .blog__item__wrapper {
+    display: grid;
+    position: relative;
+  }
+  
+}
 /* Medium and up */
 @media screen and (min-width: 40em) {
 
