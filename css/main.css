@@ -127,16 +127,6 @@ header {
   background-color: white;
 }
 
-.services__container,
-.blog__container,
-.portfolio__container,
-.clients__container,
-.instagram__container,
-.socials__container {
-  display: grid;
-  gap: 1rem;
-}
-
 /* 2.2 Small only   */
 @media screen and (max-width: 39.9375em) {
   .s-hide {
