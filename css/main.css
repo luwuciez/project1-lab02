@@ -141,6 +141,24 @@ header {
   .s-hide {
     display: none;
   }
+
+  .grid {
+    display: grid;
+    gap: 1rem;
+  }
+
+  .s-col-2 {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .s-col-span {
+    grid-row-start: 1;
+    grid-row-end: -1;
+  }
+
+  .services__item__heading {
+    text-align: left;
+  }
 }
 
 /* 2.3 medium and up */
