@@ -4,78 +4,68 @@
   --font-bold: 700;
 }
 
-body {
+h1, h2, h3, h4 {
   font-family: "Ubuntu", sans-serif;
   font-weight: var(--font-reg);
 }
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-weight: var(--font-reg);
+}
+
+/* core layout */
+
+.page {
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+img {
+  width: 100%
+}
+
+.row {
+  display: grid;
+  row-gap: 1rem;
+}
+.col {
+  position: relative;
+}
+
 
 /* Small only */
 @media screen and (max-width: 39.9375em) {
   .m-hide {
     display: none;
   }
-
-  .blog {
-    text-align: center;
-    padding: 1rem 0;
-
-  }
-
-  /* headings */
-  .section__heading {
-    color: #494949;
-    font-weight: var(--font-reg);
-    font-family: "Ubuntu", sans-serif;
-  }
-  .section__subheading {
-    color: #a3a3a3;
-    font-weight: var(--font-reg);
-    font-family: "Ubuntu", sans-serif;
-  }
-
-  /* date */
-  .blog__item__date {
-    position: absolute;
-    top: 0;
-    left: 0;
-    background: #D8605F;
-    color: #ffffff;
-    text-align: center;
-    padding: .75rem 1.5rem;
-
-  }
-  .blog__item__date--day {
-    font-size: 1.5rem;
-    font-weight: var(--font-reg);
-    font-family: "Ubuntu", sans-serif;
-  }
-  .blog__item__date--month,
-  .blog__item__date--year {
-    font-size: .75rem;
-    font-weight: var(--font-reg);
-    font-family: "Ubuntu", sans-serif;
-  }
-
-  /* blog content */
-  .blog__item {
-    display: grid;
-    position: relative;
-    grid-template-columns: auto 1fr auto;
-
-  }
-  .blog__container {
-    display: grid;
-
-  }
-
-  .blog__item__wrapper {
-    display: grid;
-    position: relative;
-  }
-  
 }
+
 /* Medium and up */
 @media screen and (min-width: 40em) {
+
+  .row {
+    max-width: 70rem;
+    column-gap: 1.5rem;
+    row-gap: 1.5rem;
+    margin: 0 auto;
+  }
+
+  .m-col-2 {
+    grid-template-columns: 1fr 1fr;
+  }
+  .m-col-3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .m-col-4 {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .m-col-5 {
+    grid-template-columns: repeat(5, 1fr);
+  }
+  .m-1-2 {
+    grid-template-columns: 1fr 2fr;
+  }
 
 }
 
@@ -86,6 +76,22 @@ body {
 
 /* Large and up */
 @media screen and (min-width: 64em) {
+
+  l-col-2 {
+    grid-template-columns: 1fr 1fr;
+  }
+  l-col-3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  l-col-4 {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  l-col-5 {
+    grid-template-columns: repeat(5, 1fr);
+  }
+  l-col-6 {
+    grid-template-columns: repeat(6, 1fr);
+  }
 
 }
 
