@@ -127,6 +127,15 @@ header {
   background-color: white;
 }
 
+.row {
+  display: grid;
+  gap: 1rem;
+}
+
+.col {
+  position: relative;
+}
+
 /* 2.2 Small only   */
 @media screen and (max-width: 39.9375em) {
   .s-hide {
@@ -136,10 +145,25 @@ header {
 
 /* 2.3 medium and up */
 @media screen and (min-width: 40em) {
+  .m-col-2 {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .m-col-3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .m-col-4 {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
 
 /* 2.4 Medium only */
 @media screen and (min-width: 40em) and (max-width: 63.9375em) {
+  .m-row-span {
+    grid-column-start: 1;
+    grid-column-end: -1;
+  }
 }
 
 /* 2.5 large screens and up */
