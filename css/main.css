@@ -134,7 +134,8 @@ header {
 
 .col {
   position: relative;
-  
+}
+
 .nav__link {
   display: block;
   padding-bottom: 0.75rem;
