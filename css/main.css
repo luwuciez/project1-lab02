@@ -151,11 +151,6 @@ header {
     grid-template-columns: 1fr 1fr;
   }
 
-  .s-col-span {
-    grid-row-start: 1;
-    grid-row-end: -1;
-  }
-
   .services__item__heading {
     text-align: left;
   }
@@ -186,6 +181,21 @@ header {
 
 /* 2.5 large screens and up */
 @media screen and (min-width: 64em) {
+  .l-col-2 {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .l-col-3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .l-col-4 {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .l-col-5 {
+    grid-template-columns: repeat(5, 1fr);
+  }
 }
 
 /* 2.6 Large only */
