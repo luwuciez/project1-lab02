@@ -181,6 +181,10 @@ header {
 
 /* 2.5 large screens and up */
 @media screen and (min-width: 64em) {
+  .page {
+    width: 80%;
+  }
+
   .l-col-2 {
     grid-template-columns: 1fr 1fr;
   }
@@ -236,6 +240,10 @@ header {
 
 .nav__link__text--arrow {
   font-family: "Open Sans", sans-serif;
+}
+
+.banner__container {
+  background-color: #ebebeb;
 }
 
 .intro__text {
