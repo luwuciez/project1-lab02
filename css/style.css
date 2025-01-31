@@ -52,40 +52,42 @@ html {
   text-shadow: none;
 }
 
-hr {
-  display: block;
-  height: 1px;
-  border: 0;
-  border-top: 1px solid #ccc;
-  margin: 1em 0;
-  padding: 0;
-}
-
-audio,
-canvas,
-iframe,
 img,
 svg,
 video {
   vertical-align: middle;
 }
 
-fieldset {
-  border: 0;
-  margin: 0;
-  padding: 0;
-}
-
-textarea {
-  resize: vertical;
-}
 
 /* 1.2 Core Styling */
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+html, body, form { 
+  margin: 0; 
+  padding: 0; 
+}
+
+img {
+  width: 100%;
+}
 
 /* 1.3 Typgraphy */
-
 body {
-  font-family: "Ubuntu", sans-serif;
+  font-family: Ubuntu, sans-serif;
+  font-weight: normal;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  text-align: center;
+}
+
+a {
+  color: var(--darkblue);
+  text-decoration: none;
 }
 
 
@@ -93,14 +95,38 @@ body {
    2. LAYOUT
    ========================================================================== */
 
+/* Helper to display empty layout containers*/
+
+div,
+main,
+section,
+footer,
+header {
+    outline: 1px solid #ccc;
+    min-height: 1rem;
+    padding: 1rem;
+}
 
 /* 2.1 Core layout */
+.page {
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: white;
+}
 
+.services__container,
+.blog__container,
+.portfolio__container,
+.clients__container,
+.instagram__container,
+.socials__container {
+  display: grid;
+}
 
 /* 2.2 Small only   */
 @media screen and (max-width: 39.9375em) {
 
-  .m-hide {
+  .s-hide {
     display: none;
   }
 
