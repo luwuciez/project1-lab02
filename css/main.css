@@ -127,6 +127,14 @@ header {
   background-color: white;
 }
 
+.row {
+  display: grid;
+  gap: 1rem;
+}
+
+.col {
+  position: relative;
+  
 .nav__link {
   display: block;
   padding-bottom: 0.75rem;
@@ -143,18 +151,65 @@ header {
   .s-hide {
     display: none;
   }
+
+  .grid {
+    display: grid;
+    gap: 1rem;
+  }
+
+  .s-col-2 {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .services__item__heading {
+    text-align: left;
+  }
 }
 
 /* 2.3 medium and up */
 @media screen and (min-width: 40em) {
+  .m-col-2 {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .m-col-3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .m-col-4 {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
 
 /* 2.4 Medium only */
 @media screen and (min-width: 40em) and (max-width: 63.9375em) {
+  .m-row-span {
+    grid-column-start: 1;
+    grid-column-end: -1;
+  }
 }
 
 /* 2.5 large screens and up */
 @media screen and (min-width: 64em) {
+  .page {
+    width: 80%;
+  }
+
+  .l-col-2 {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .l-col-3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .l-col-4 {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .l-col-5 {
+    grid-template-columns: repeat(5, 1fr);
+  }
 }
 
 /* 2.6 Large only */
@@ -167,6 +222,10 @@ header {
 
 .nav__link__text--arrow {
   font-family: "Open Sans", sans-serif;
+}
+
+.banner__container {
+  background-color: #ebebeb;
 }
 
 .intro__text {
