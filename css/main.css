@@ -1,0 +1,239 @@
+/* ==========================================================================
+    [Table of contents]
+
+    1. BASE
+        1.1 Page Rendering Defaults
+        1.2 Core Styling
+        1.3 Typography
+    2. LAYOUT
+        2.1 Core Layout
+        2.2 Small only
+        2.3 medium and up
+        2.4 Medium only
+        2.5 large screens and up
+        2.6 Large only
+    3. MODULES
+    4. STATES
+    5. THEME
+    6. UTILITY classes
+    7. PRINT
+
+    refer to http://smacss.com/
+    ========================================================================== */
+
+/* Variables */
+:root {
+  --blue: #19b2de;
+  --green: #25c389;
+  --yellow: #ffb901;
+  --red: #de6262;
+  --darkblue: #265787;
+}
+
+/* ==========================================================================
+   BASE
+   ========================================================================== */
+
+/* 1.1 Page Rendering Defaults */
+
+html {
+  color: #222;
+  font-size: 1em;
+  line-height: 1.4;
+}
+
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+
+/* 1.2 Core Styling */
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+html,
+body,
+form,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  width: 100%;
+}
+
+/* 1.3 Typgraphy */
+body {
+  font-family: Ubuntu, sans-serif;
+  font-weight: normal;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+  text-align: center;
+  margin: 0;
+}
+
+em {
+  color: var(--blue);
+  font-style: normal;
+}
+
+a {
+  color: var(--darkblue);
+  text-decoration: none;
+}
+
+/* ==========================================================================
+   2. LAYOUT
+   ========================================================================== */
+
+/* Helper to display empty layout containers*/
+
+div,
+main,
+section,
+footer,
+header {
+  outline: 1px solid #ccc;
+  min-height: 1rem;
+  padding: 1rem;
+}
+
+/* 2.1 Core layout */
+.page {
+  margin: 0 auto;
+  padding: 1rem;
+  background-color: white;
+}
+
+.nav__link {
+  display: block;
+  padding-bottom: 0.75rem;
+}
+
+.nav__link__text {
+  display: inline;
+  color: white;
+  padding: 0;
+}
+
+/* 2.2 Small only   */
+@media screen and (max-width: 39.9375em) {
+  .s-hide {
+    display: none;
+  }
+}
+
+/* 2.3 medium and up */
+@media screen and (min-width: 40em) {
+}
+
+/* 2.4 Medium only */
+@media screen and (min-width: 40em) and (max-width: 63.9375em) {
+}
+
+/* 2.5 large screens and up */
+@media screen and (min-width: 64em) {
+}
+
+/* 2.6 Large only */
+@media screen and (min-width: 64em) and (max-width: 74.9375em) {
+}
+
+/* ==========================================================================
+   3. MODULES
+   ========================================================================== */
+
+.nav__link__text--arrow {
+  font-family: "Open Sans", sans-serif;
+}
+
+.intro__text {
+  font-size: 2.125rem;
+  line-height: 3rem;
+}
+
+.section__heading {
+  font-size: 1.75rem;
+  line-height: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.section__subheading {
+  color: #a3a3a3;
+  font-size: 0.75rem;
+}
+
+.services__item__heading {
+  font-weight: bold;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.blog__item__title,
+.blog__item__desc,
+.portfolio__item__title,
+.portfolio__item__desc {
+  text-align: left;
+}
+
+.blog__item__title,
+.portfolio__item__title {
+  font-size: 1rem;
+}
+
+.blog__item__desc,
+.portfolio__item__desc {
+  font-weight: normal;
+  font-size: 0.75rem;
+}
+
+/* ==========================================================================
+   4. STATES
+   ========================================================================== */
+
+/* ==========================================================================
+   5. THEME
+   ========================================================================== */
+
+.nav__link:nth-child(1) {
+  background-color: var(--green);
+}
+
+.nav__link:nth-child(2) {
+  background-color: var(--yellow);
+}
+.nav__link:nth-child(3) {
+  background-color: var(--red);
+}
+.nav__link:nth-child(4) {
+  background-color: var(--blue);
+}
+.nav__link:nth-child(5) {
+  background-color: var(--darkblue);
+}
+
+/* ==========================================================================
+   6. UTILITY classes
+   ========================================================================== */
