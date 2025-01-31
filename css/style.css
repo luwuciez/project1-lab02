@@ -58,17 +58,19 @@ video {
   vertical-align: middle;
 }
 
-
 /* 1.2 Core Styling */
 *,
 *:before,
 *:after {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-html, body, form { 
-  margin: 0; 
-  padding: 0; 
+html,
+body,
+form,
+p {
+  margin: 0;
+  padding: 0;
 }
 
 img {
@@ -81,15 +83,26 @@ body {
   font-weight: normal;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
   text-align: center;
+  margin: 0;
+}
+
+em {
+  color: var(--blue);
+  font-style: normal;
 }
 
 a {
   color: var(--darkblue);
   text-decoration: none;
 }
-
 
 /* ==========================================================================
    2. LAYOUT
@@ -102,15 +115,15 @@ main,
 section,
 footer,
 header {
-    outline: 1px solid #ccc;
-    min-height: 1rem;
-    padding: 1rem;
+  outline: 1px solid #ccc;
+  min-height: 1rem;
+  padding: 1rem;
 }
 
 /* 2.1 Core layout */
 .page {
   margin: 0 auto;
-  padding: 2rem;
+  padding: 1rem;
   background-color: white;
 }
 
@@ -121,54 +134,92 @@ header {
 .instagram__container,
 .socials__container {
   display: grid;
+  gap: 1rem;
 }
 
 /* 2.2 Small only   */
 @media screen and (max-width: 39.9375em) {
-
   .s-hide {
     display: none;
   }
-
 }
 
 /* 2.3 medium and up */
 @media screen and (min-width: 40em) {
-
 }
 
 /* 2.4 Medium only */
 @media screen and (min-width: 40em) and (max-width: 63.9375em) {
-
 }
 
 /* 2.5 large screens and up */
 @media screen and (min-width: 64em) {
-
+  .services__container,
+  .blog__container,
+  .portfolio__container,
+  .clients__container,
+  .instagram__container,
+  .socials__container {
+    gap: 2rem;
+  }
 }
 
 /* 2.6 Large only */
 @media screen and (min-width: 64em) and (max-width: 74.9375em) {
-
 }
 
-
 /* ==========================================================================
-   2. MODULES
+   3. MODULES
    ========================================================================== */
 
+.intro__text {
+  font-size: 2.125rem;
+  line-height: 3rem;
+}
+
+.section__heading {
+  font-size: 1.75rem;
+  line-height: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.section__subheading {
+  color: #a3a3a3;
+  font-size: 0.75rem;
+}
+
+.services__item__heading {
+  font-weight: bold;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.blog__item__title,
+.blog__item__desc,
+.portfolio__item__title,
+.portfolio__item__desc {
+  text-align: left;
+}
+
+.blog__item__title,
+.portfolio__item__title {
+  font-size: 1rem;
+}
+
+.blog__item__desc,
+.portfolio__item__desc {
+  font-weight: normal;
+  font-size: 0.75rem;
+}
 
 /* ==========================================================================
-   2. STATES
+   4. STATES
    ========================================================================== */
-
 
 /* ==========================================================================
-   2. THEME
+   5. THEME
    ========================================================================== */
-
 
 /* ==========================================================================
    6. UTILITY classes
    ========================================================================== */
-
