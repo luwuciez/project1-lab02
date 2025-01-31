@@ -134,6 +134,16 @@ header {
 
 .col {
   position: relative;
+  
+.nav__link {
+  display: block;
+  padding-bottom: 0.75rem;
+}
+
+.nav__link__text {
+  display: inline;
+  color: white;
+  padding: 0;
 }
 
 /* 2.2 Small only   */
@@ -210,34 +220,6 @@ header {
    3. MODULES
    ========================================================================== */
 
-.nav__link {
-  display: block;
-  padding-bottom: 0.75rem;
-}
-
-.nav__link:nth-child(1) {
-  background-color: var(--green);
-}
-
-.nav__link:nth-child(2) {
-  background-color: var(--yellow);
-}
-.nav__link:nth-child(3) {
-  background-color: var(--red);
-}
-.nav__link:nth-child(4) {
-  background-color: var(--blue);
-}
-.nav__link:nth-child(5) {
-  background-color: var(--darkblue);
-}
-
-.nav__link__text {
-  display: inline;
-  color: white;
-  padding: 0;
-}
-
 .nav__link__text--arrow {
   font-family: "Open Sans", sans-serif;
 }
@@ -293,6 +275,23 @@ header {
 /* ==========================================================================
    5. THEME
    ========================================================================== */
+
+.nav__link:nth-child(1) {
+  background-color: var(--green);
+}
+
+.nav__link:nth-child(2) {
+  background-color: var(--yellow);
+}
+.nav__link:nth-child(3) {
+  background-color: var(--red);
+}
+.nav__link:nth-child(4) {
+  background-color: var(--blue);
+}
+.nav__link:nth-child(5) {
+  background-color: var(--darkblue);
+}
 
 /* ==========================================================================
    6. UTILITY classes
