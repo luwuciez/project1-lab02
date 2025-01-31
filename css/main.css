@@ -144,14 +144,6 @@ header {
 
 /* 2.5 large screens and up */
 @media screen and (min-width: 64em) {
-  .services__container,
-  .blog__container,
-  .portfolio__container,
-  .clients__container,
-  .instagram__container,
-  .socials__container {
-    gap: 2rem;
-  }
 }
 
 /* 2.6 Large only */
