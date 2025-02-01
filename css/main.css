@@ -12,6 +12,7 @@
         2.4 Medium only
         2.5 large screens and up
         2.6 Large only
+        2.7 Extra large screens and up
     3. MODULES
     4. STATES
     5. THEME
@@ -153,6 +154,10 @@ header {
     display: none;
   }
 
+  .services__item__heading {
+    text-align: left;
+  }
+
   .grid {
     display: grid;
     gap: 1rem;
@@ -162,8 +167,21 @@ header {
     grid-template-columns: 1fr 1fr;
   }
 
-  .services__item__heading {
-    text-align: left;
+  .s--col3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .bio__wrapper {
+    grid-column: 2 / -1;
+  }
+
+  .mastodon {
+    grid-column: 1 / -1;
+    grid-row-start: 2;
+  }
+
+  .socials {
+    grid-column: 2 / -1;
   }
 }
 
@@ -185,8 +203,29 @@ header {
     grid-template-columns: repeat(5, 1fr);
   }
 
+  /* footer grid */
   .m--col6 {
     grid-template-columns: repeat(6, 1fr);
+  }
+
+  .bio__wrapper {
+    grid-column: 2 / -1;
+  }
+
+  .about {
+    grid-column: 1 / 4;
+  }
+
+  .instagram {
+    grid-column: 4 / -1;
+  }
+
+  .mastodon {
+    grid-column: 1 / 5;
+  }
+
+  .socials {
+    grid-column: 5 / -1;
   }
 }
 
@@ -200,10 +239,6 @@ header {
 
 /* 2.5 large screens and up */
 @media screen and (min-width: 64em) {
-  .page {
-    width: 80%;
-  }
-
   .l-col-2 {
     grid-template-columns: 1fr 1fr;
   }
@@ -223,10 +258,38 @@ header {
   .l--col6 {
     grid-template-columns: repeat(6, 1fr);
   }
+
+  /* footer grid */
+  .l--col12 {
+    grid-template-columns: repeat(12, 1fr);
+  }
+
+  .about {
+    grid-column: 1 / 4;
+  }
+
+  .instagram {
+    grid-column: 4 / 7;
+  }
+
+  .mastodon {
+    grid-column: 7 / 11;
+  }
+
+  .socials {
+    grid-column: 11 / -1;
+  }
 }
 
 /* 2.6 Large only */
 @media screen and (min-width: 64em) and (max-width: 74.9375em) {
+}
+
+/* 2.7 Extra large screens and up */
+@media screen and (min-width: 96em) {
+  .page {
+    width: 80%;
+  }
 }
 
 /* ==========================================================================
