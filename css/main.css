@@ -246,9 +246,26 @@ header {
 }
 
 .services__item__heading {
+  order:0;
   font-weight: bold;
   font-size: 1rem;
   margin-bottom: 1rem;
+}
+
+.services__item__text{
+  order:1;
+  margin:0;
+  order:3;
+  text-align: justify;
+}
+
+.services__item__icon {
+  order:-1;
+  width: 4rem;
+  height:4rem;
+  padding: 0.5rem 1rem;
+  outline: 3px solid;
+  border-radius: 2px;
 }
 
 .blog__item__title,
