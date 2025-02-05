@@ -124,8 +124,30 @@ header {
 /* 2.1 Core layout */
 .page {
   margin: 0 auto;
+}
+
+.page__header,
+.page__content,
+.footer__container {
   padding: 1rem;
-  background-color: white;
+}
+
+.page__footer {
+  padding: 0rem;
+}
+
+.bio__container {
+  padding: 2rem;
+}
+
+.bio__wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.bio__img {
+  border-radius: 100%;
 }
 
 .row {
@@ -288,7 +310,7 @@ header {
 /* 2.7 Extra large screens and up */
 @media screen and (min-width: 96em) {
   .page {
-    width: 80%;
+    width: 80rem;
   }
 }
 
@@ -367,6 +389,11 @@ header {
 }
 .nav__link:nth-child(5) {
   background-color: var(--darkblue);
+}
+
+.page__footer {
+  background-color: #0e2e4e;
+  color: white;
 }
 
 /* ==========================================================================
