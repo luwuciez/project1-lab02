@@ -284,15 +284,25 @@ header {
 .blog__item__date {
   background-color: #de6262;
   color: white;
+  position: absolute;
+  padding: .25rem 1rem;
 }
 
+.blog__item__date--day {
+  font-size: 1rem;
+  padding: 0;
+}
+.blog__item__date--month-year {
+  font-size: 0.5rem;
+  padding: 0;
+}
 .blog__item__wrapper {
   background-color: #19B2DE;
   color: white;
 }
 
 .blog__item {
-  background-image: url("img/placeholder.svg");
+  position: relative;
 }
 
 /* ==========================================================================
