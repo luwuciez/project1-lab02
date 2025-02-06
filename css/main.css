@@ -150,6 +150,8 @@ header {
 .flex {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  
 }
 
 .flex-date {
@@ -285,7 +287,7 @@ header {
   background-color: #de6262;
   color: white;
   position: absolute;
-  padding: .25rem 1rem;
+  padding: .25rem 1.25rem;
 }
 
 .blog__item__date--day {
@@ -299,10 +301,20 @@ header {
 .blog__item__wrapper {
   background-color: #19B2DE;
   color: white;
+  padding: 1rem;
+  position: relative;
+}
+
+.blog__item__wrapper svg {
+  position: absolute;
 }
 
 .blog__item {
   position: relative;
+}
+
+.blog__item__icon {
+  align-self: flex-end;
 }
 
 /* ==========================================================================
