@@ -110,7 +110,7 @@ a {
 
 /* Helper to display empty layout containers*/
 
-/* div,
+div,
 main,
 section,
 footer,
@@ -118,7 +118,7 @@ header {
   outline: 1px solid #ccc;
   min-height: 1rem;
   padding: 1rem;
-} */
+}
 
 /* 2.1 Core layout */
 .page {
@@ -270,6 +270,22 @@ header {
   border-radius: 2px;
   align-self: center;
   flex-shrink: 0;
+}
+
+.services__item__icon:nth-child(){
+  outline-color: #FFB901;
+}
+
+.services__item__icon:nth-child(){
+  outline-color: #25C389;
+}
+
+.services__item__icon:nth-child(){
+  outline-color: #DE6262;
+}
+
+.services__item__icon:nth-child(){
+  outline-color: #1596BD;
 }
 
 .blog__item__title,
