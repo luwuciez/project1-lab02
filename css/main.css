@@ -147,6 +147,18 @@ header {
   padding: 0;
 }
 
+.flex {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-date {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 /* 2.2 Small only   */
 @media screen and (max-width: 39.9375em) {
   .s-hide {
@@ -269,6 +281,20 @@ header {
   font-size: 0.75rem;
 }
 
+.blog__item__date {
+  background-color: #de6262;
+  color: white;
+}
+
+.blog__item__wrapper {
+  background-color: #19B2DE;
+  color: white;
+}
+
+.blog__item {
+  background-image: url("img/placeholder.svg");
+}
+
 /* ==========================================================================
    4. STATES
    ========================================================================== */
@@ -280,7 +306,6 @@ header {
 .nav__link:nth-child(1) {
   background-color: var(--green);
 }
-
 .nav__link:nth-child(2) {
   background-color: var(--yellow);
 }
