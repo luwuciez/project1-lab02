@@ -105,6 +105,12 @@ a {
   text-decoration: none;
 }
 
+.mastodon__text {
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.6rem;
+  font-weight: bold;
+}
+
 /* ==========================================================================
    2. LAYOUT
    ========================================================================== */
@@ -290,9 +296,13 @@ header {
 }
 
 /* 2.7 Extra large screens and up */
-@media screen and (min-width: 96em) {
-  .page {
-    width: 80rem;
+@media screen and (min-width: 75em) {
+  .page__header,
+  .page__content,
+  .footer__container,
+  .bio__container {
+    width: 75rem;
+    margin: 0 auto;
   }
 }
 
@@ -350,6 +360,7 @@ header {
 
 .page__footer {
   padding: 0rem;
+  margin: 0rem;
 }
 
 .bio__container {
@@ -362,8 +373,73 @@ header {
   align-items: center;
 }
 
+.bio__text {
+  padding-left: 1rem;
+}
+
 .bio__img {
   border-radius: 100%;
+}
+
+.footer__heading {
+  padding-top: 1.5rem;
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+  text-align: left;
+  border-bottom: 1px solid;
+}
+
+.about__text,
+.mastodon__text {
+  padding-bottom: 1rem;
+}
+
+.socials__container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.socials__btn {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 2px;
+}
+
+.socials__form {
+  display: flex;
+  flex-direction: row;
+  margin-top: 1rem;
+}
+
+.socials__input {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  border: none;
+  border-radius: 0.25rem 0 0 0.25rem;
+  height: 2rem;
+  padding: 0 0.5rem;
+  background-color: var(--red);
+  min-width: 0;
+}
+
+.socials__input::placeholder {
+  font-size: 0.7rem;
+  color: white;
+}
+
+.socials__submit {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  border: none;
+  border-radius: 0 0.25rem 0.25rem 0;
+  width: 2rem;
+  height: 2rem;
+  background-color: var(--yellow);
+  flex-shrink: 0;
 }
 
 /* ==========================================================================
@@ -394,6 +470,46 @@ header {
 .page__footer {
   background-color: #0e2e4e;
   color: white;
+}
+
+.footer__heading--about {
+  color: var(--yellow);
+}
+
+.footer__heading--instagram {
+  color: var(--red);
+}
+
+.footer__heading--mastodon {
+  color: var(--blue);
+}
+
+.footer__heading--socials {
+  color: white;
+}
+
+.mastodon__link {
+  color: var(--blue);
+}
+
+.socials__btn:nth-child(1) {
+  background-color: #527cc4;
+}
+
+.socials__btn:nth-child(2) {
+  background-color: #e46145;
+}
+
+.socials__btn:nth-child(3) {
+  background-color: #00b0e2;
+}
+
+.socials__btn:nth-child(4) {
+  background-color: #f6679c;
+}
+
+.socials__btn:nth-child(5) {
+  background-color: #ffb901;
 }
 
 /* ==========================================================================
