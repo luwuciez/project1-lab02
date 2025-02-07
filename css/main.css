@@ -179,6 +179,20 @@ header {
   .services__item__heading {
     text-align: left;
   }
+
+  .blog__item__date {
+    background-color: #de6262;
+    color: white;
+    position: absolute;
+    padding: 0.5rem 0.5rem;
+  }
+
+  .blog__item__wrapper {
+    background-color: #19B2DE;
+    color: white;
+    padding: .6rem;
+    position: relative;
+  }
 }
 
 /* 2.3 medium and up */
@@ -202,12 +216,41 @@ header {
     grid-column-start: 1;
     grid-column-end: -1;
   }
+
+  .blog__item__date  {
+    background-color: #de6262;
+    color: white;
+    position: absolute;
+    padding: 0 .7rem;
+  }
+
+  .blog__item__wrapper {
+    background-color: #19B2DE;
+    color: white;
+    padding: .5rem;
+    position: relative;
+  }
 }
 
 /* 2.5 large screens and up */
 @media screen and (min-width: 64em) {
   .page {
     width: 80%;
+    
+  }
+
+  .blog__item__date {
+    background-color: #de6262;
+    color: white;
+    position: absolute;
+    padding: 0 .8rem;
+  }
+
+  .blog__item__wrapper {
+    background-color: #19B2DE;
+    color: white;
+    padding: .5rem;
+    position: relative;
   }
 
   .l-col-2 {
@@ -283,13 +326,6 @@ header {
   font-size: 0.75rem;
 }
 
-.blog__item__date {
-  background-color: #de6262;
-  color: white;
-  position: absolute;
-  padding: .25rem 1.25rem;
-}
-
 .blog__item__date--day {
   font-size: 1rem;
   padding: 0;
@@ -297,12 +333,6 @@ header {
 .blog__item__date--month-year {
   font-size: 0.5rem;
   padding: 0;
-}
-.blog__item__wrapper {
-  background-color: #19B2DE;
-  color: white;
-  padding: 1rem;
-  position: relative;
 }
 
 .blog__item__wrapper svg {
