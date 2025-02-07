@@ -172,6 +172,7 @@ header {
   color: white;
   position: relative;
 }
+  
 
 /* 2.2 Small only   */
 @media screen and (max-width: 39.9375em) {
@@ -230,6 +231,17 @@ header {
   .blog__item__wrapper {
     padding: .5rem;
   }
+
+  #blog__item-1 {
+    padding: 0 .65rem;
+  }
+  #blog__item__day-1 {
+    font-size: 1.75rem;
+    padding: 0 1rem;
+  }
+  #blog__item__month-year-1 {
+    font-size: .8rem;
+    padding: 0.25rem;
 
 }
 
