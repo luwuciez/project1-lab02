@@ -233,16 +233,27 @@ header {
   }
 
   #blog__item-1 {
-    padding: 0 .65rem;
+    padding: 0 .25rem;
   }
   #blog__item__day-1 {
     font-size: 1.75rem;
     padding: 0 1rem;
   }
   #blog__item__month-year-1 {
-    font-size: .8rem;
+    font-size: 0.95rem;
     padding: 0.25rem;
+  }
 
+  #blog__item__wrapper-1 {
+    padding: .75rem;
+  }
+
+  #blog__item__title-1 {
+    font-size: 1.25rem;
+  }
+  #blog__item__desc-1 {
+    font-size: .8rem;
+  }
 }
 
 /* 2.5 large screens and up */
@@ -282,8 +293,8 @@ header {
 }
 
 /* ==========================================================================
-   3. MODULES
-   ========================================================================== */
+  3. MODULES
+========================================================================== */
 
 .nav__link__text--arrow {
   font-family: "Open Sans", sans-serif;
