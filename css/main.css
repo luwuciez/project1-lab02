@@ -169,7 +169,6 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  
 }
 
 .flex-date {
@@ -186,11 +185,11 @@ header {
 }
 
 .blog__item__wrapper {
-  background-color: #19B2DE;
+  background-color: #19b2de;
   color: white;
   position: relative;
 }
-  
+
 .bio__img {
   padding: 1rem;
 }
@@ -255,7 +254,7 @@ header {
   }
 
   .blog__item__wrapper {
-    padding: .6rem;
+    padding: 0.6rem;
   }
 }
 
@@ -338,35 +337,35 @@ header {
     grid-column-end: -1;
   }
 
-  .blog__item__date  {
-    padding: 0 .7rem;
+  .blog__item__date {
+    padding: 0 0.7rem;
   }
 
   .blog__item__wrapper {
-    padding: .5rem;
+    padding: 0.5rem;
   }
 
-  #blog__item-1 {
-    padding: 0 .25rem;
+  #blog__item--first {
+    padding: 0 0.25rem;
   }
-  #blog__item__day-1 {
+  #blog__item__day--first {
     font-size: 1.75rem;
     padding: 0 1rem;
   }
-  #blog__item__month-year-1 {
+  #blog__item__monthyear--first {
     font-size: 0.95rem;
     padding: 0.25rem;
   }
 
-  #blog__item__wrapper-1 {
-    padding: .75rem;
+  #blog__item__wrapper--first {
+    padding: 0.75rem;
   }
 
-  #blog__item__title-1 {
+  #blog__item__title--first {
     font-size: 1.25rem;
   }
-  #blog__item__desc-1 {
-    font-size: .8rem;
+  #blog__item__desc--first {
+    font-size: 0.8rem;
   }
 }
 
@@ -391,13 +390,13 @@ header {
   .l--col6 {
     grid-template-columns: repeat(6, 1fr);
   }
-  
+
   .blog__item__date {
-    padding: 0 .8rem;
+    padding: 0 0.8rem;
   }
 
   .blog__item__wrapper {
-    padding: .5rem;
+    padding: 0.5rem;
   }
 
   /* footer grid */
@@ -510,7 +509,7 @@ header {
   font-size: 1rem;
   padding: 0;
 }
-.blog__item__date--month-year {
+.blog__item__date--monthyear {
   font-size: 0.5rem;
   padding: 0;
 }
