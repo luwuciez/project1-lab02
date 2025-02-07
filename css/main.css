@@ -158,6 +158,10 @@ header {
   padding: 0;
 }
 
+.bio__img {
+  padding: 1rem;
+}
+
 /* 2.2 Small only   */
 @media screen and (max-width: 39.9375em) {
   .s--hide {
@@ -183,6 +187,10 @@ header {
 
   .bio__wrapper {
     grid-column: 2 / -1;
+  }
+
+  .bio__img {
+    padding: 0.5rem;
   }
 
   .mastodon {
@@ -398,19 +406,8 @@ h4 {
   align-items: center;
 }
 
-.bio__text {
-  padding-left: 1rem;
-}
-
-.bio__img__container::after {
-  content: "";
-  display: block;
-  padding-bottom: 100%;
-}
-
 .bio__img {
-  position: absolute;
-  height: 100%;
+  aspect-ratio: 1 / 1;
   object-fit: cover;
   border-radius: 100%;
 }
