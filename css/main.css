@@ -358,6 +358,27 @@ header {
   font-size: 0.75rem;
 }
 
+.portfolio__item__wrapper {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  background-color: #19B2DE;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  opacity: 0;
+}
+
+.portfolio__item__wrapper:hover {
+  opacity: 0.83;
+}
+
+.portfolio__item__wrapper h3, h4 {
+  color: white;
+}
+
 .page__footer {
   padding: 0rem;
   margin: 0rem;
