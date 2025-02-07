@@ -444,8 +444,7 @@ header {
 @media screen and (min-width: 75em) {
   .page__header,
   .page__content,
-  .footer__container,
-  .bio__container {
+  .footer__container {
     width: 75rem;
     margin: 0 auto;
   }
