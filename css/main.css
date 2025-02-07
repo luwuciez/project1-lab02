@@ -12,6 +12,7 @@
         2.4 Medium only
         2.5 large screens and up
         2.6 Large only
+        2.7 Extra large screens and up
     3. MODULES
     4. STATES
     5. THEME
@@ -104,13 +105,19 @@ a {
   text-decoration: none;
 }
 
+.mastodon__text {
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.6rem;
+  font-weight: bold;
+}
+
 /* ==========================================================================
    2. LAYOUT
    ========================================================================== */
 
 /* Helper to display empty layout containers*/
 
-div,
+/* div,
 main,
 section,
 footer,
@@ -118,13 +125,17 @@ header {
   outline: 1px solid #ccc;
   min-height: 1rem;
   padding: 1rem;
-}
+} */
 
 /* 2.1 Core layout */
 .page {
   margin: 0 auto;
+}
+
+.page__header,
+.page__content,
+.footer__container {
   padding: 1rem;
-  background-color: white;
 }
 
 .row {
@@ -153,6 +164,10 @@ header {
     display: none;
   }
 
+  .services__item__heading {
+    text-align: left;
+  }
+
   .grid {
     display: grid;
     gap: 1rem;
@@ -162,8 +177,21 @@ header {
     grid-template-columns: 1fr 1fr;
   }
 
-  .services__item__heading {
-    text-align: left;
+  .s--col3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .bio__wrapper {
+    grid-column: 2 / -1;
+  }
+
+  .mastodon {
+    grid-column: 1 / -1;
+    grid-row-start: 2;
+  }
+
+  .socials {
+    grid-column: 2 / -1;
   }
 }
 
@@ -185,8 +213,29 @@ header {
     grid-template-columns: repeat(5, 1fr);
   }
 
+  /* footer grid */
   .m--col6 {
     grid-template-columns: repeat(6, 1fr);
+  }
+
+  .bio__wrapper {
+    grid-column: 2 / -1;
+  }
+
+  .about {
+    grid-column: 1 / 4;
+  }
+
+  .instagram {
+    grid-column: 4 / -1;
+  }
+
+  .mastodon {
+    grid-column: 1 / 5;
+  }
+
+  .socials {
+    grid-column: 5 / -1;
   }
 }
 
@@ -200,10 +249,6 @@ header {
 
 /* 2.5 large screens and up */
 @media screen and (min-width: 64em) {
-  .page {
-    width: 80%;
-  }
-
   .l-col-2 {
     grid-template-columns: 1fr 1fr;
   }
@@ -223,10 +268,42 @@ header {
   .l--col6 {
     grid-template-columns: repeat(6, 1fr);
   }
+
+  /* footer grid */
+  .l--col12 {
+    grid-template-columns: repeat(12, 1fr);
+  }
+
+  .about {
+    grid-column: 1 / 4;
+  }
+
+  .instagram {
+    grid-column: 4 / 7;
+  }
+
+  .mastodon {
+    grid-column: 7 / 11;
+  }
+
+  .socials {
+    grid-column: 11 / -1;
+  }
 }
 
 /* 2.6 Large only */
 @media screen and (min-width: 64em) and (max-width: 74.9375em) {
+}
+
+/* 2.7 Extra large screens and up */
+@media screen and (min-width: 75em) {
+  .page__header,
+  .page__content,
+  .footer__container,
+  .bio__container {
+    width: 75rem;
+    margin: 0 auto;
+  }
 }
 
 /* ==========================================================================
@@ -281,6 +358,90 @@ header {
   font-size: 0.75rem;
 }
 
+.page__footer {
+  padding: 0rem;
+  margin: 0rem;
+}
+
+.bio__container {
+  padding: 2rem;
+}
+
+.bio__wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.bio__text {
+  padding-left: 1rem;
+}
+
+.bio__img {
+  border-radius: 100%;
+}
+
+.footer__heading {
+  padding-top: 1.5rem;
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+  text-align: left;
+  border-bottom: 1px solid;
+}
+
+.about__text,
+.mastodon__text {
+  padding-bottom: 1rem;
+}
+
+.socials__container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.socials__btn {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 2px;
+}
+
+.socials__form {
+  display: flex;
+  flex-direction: row;
+  margin-top: 1rem;
+}
+
+.socials__input {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  border: none;
+  border-radius: 0.25rem 0 0 0.25rem;
+  height: 2rem;
+  padding: 0 0.5rem;
+  background-color: var(--red);
+  min-width: 0;
+}
+
+.socials__input::placeholder {
+  font-size: 0.7rem;
+  color: white;
+}
+
+.socials__submit {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  border: none;
+  border-radius: 0 0.25rem 0.25rem 0;
+  width: 2rem;
+  height: 2rem;
+  background-color: var(--yellow);
+  flex-shrink: 0;
+}
+
 /* ==========================================================================
    4. STATES
    ========================================================================== */
@@ -304,6 +465,51 @@ header {
 }
 .nav__link:nth-child(5) {
   background-color: var(--darkblue);
+}
+
+.page__footer {
+  background-color: #0e2e4e;
+  color: white;
+}
+
+.footer__heading--about {
+  color: var(--yellow);
+}
+
+.footer__heading--instagram {
+  color: var(--red);
+}
+
+.footer__heading--mastodon {
+  color: var(--blue);
+}
+
+.footer__heading--socials {
+  color: white;
+}
+
+.mastodon__link {
+  color: var(--blue);
+}
+
+.socials__btn:nth-child(1) {
+  background-color: #527cc4;
+}
+
+.socials__btn:nth-child(2) {
+  background-color: #e46145;
+}
+
+.socials__btn:nth-child(3) {
+  background-color: #00b0e2;
+}
+
+.socials__btn:nth-child(4) {
+  background-color: #f6679c;
+}
+
+.socials__btn:nth-child(5) {
+  background-color: #ffb901;
 }
 
 /* ==========================================================================
