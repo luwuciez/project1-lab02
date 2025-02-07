@@ -158,6 +158,10 @@ header {
   padding: 0;
 }
 
+.bio__img {
+  padding: 1rem;
+}
+
 .services__item{
   display: flex;
   flex-direction: column;
@@ -189,6 +193,10 @@ header {
 
   .bio__wrapper {
     grid-column: 2 / -1;
+  }
+
+  .bio__img {
+    padding: 0.5rem;
   }
 
   .mastodon {
@@ -445,12 +453,15 @@ h4 {
   align-items: center;
 }
 
-.bio__text {
-  padding-left: 1rem;
+.bio__img {
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 100%;
 }
 
-.bio__img {
-  border-radius: 100%;
+.divider {
+  margin: 0;
+  grid-column: 2 / 3;
 }
 
 .footer__heading {
@@ -546,18 +557,49 @@ h4 {
 
 .footer__heading--about {
   color: var(--yellow);
+  border-color: var(--green);
+}
+
+.about .footer__heading--decoration {
+  border-top-color: var(--green);
 }
 
 .footer__heading--instagram {
   color: var(--red);
+  border-color: var(--blue);
+}
+
+.instagram .footer__heading--decoration {
+  border-top-color: var(--blue);
 }
 
 .footer__heading--mastodon {
   color: var(--blue);
+  border-color: var(--yellow);
+}
+
+.mastodon .footer__heading--decoration {
+  border-top-color: var(--yellow);
 }
 
 .footer__heading--socials {
   color: white;
+  border-color: var(--blue);
+}
+
+.socials .footer__heading--decoration {
+  border-top-color: var(--blue);
+}
+
+.footer__heading--decoration {
+  position: relative;
+  top: -1rem;
+  left: 1rem;
+  width: 0;
+  height: 0;
+  border-left: 0.5rem solid transparent;
+  border-right: 0.5rem solid transparent;
+  border-top: 0.5rem solid;
 }
 
 .mastodon__link {
@@ -582,6 +624,10 @@ h4 {
 
 .socials__btn:nth-child(5) {
   background-color: #ffb901;
+}
+
+.divider {
+  border: 0.125rem solid var(--yellow);
 }
 
 /* ==========================================================================
