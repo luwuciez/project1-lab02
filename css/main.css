@@ -402,7 +402,16 @@ h4 {
   padding-left: 1rem;
 }
 
+.bio__img__container::after {
+  content: "";
+  display: block;
+  padding-bottom: 100%;
+}
+
 .bio__img {
+  position: absolute;
+  height: 100%;
+  object-fit: cover;
   border-radius: 100%;
 }
 
