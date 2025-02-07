@@ -326,12 +326,14 @@ header {
 .section__heading {
   font-size: 1.75rem;
   line-height: 2rem;
+  margin-top: 4rem;
   margin-bottom: 0.5rem;
 }
 
 .section__subheading {
   color: #a3a3a3;
   font-size: 0.75rem;
+  margin-bottom: 2rem;
 }
 
 .services__item__heading {
@@ -364,18 +366,20 @@ header {
   top: 0;
   left: 0;
   position: absolute;
-  background-color: #19B2DE;
+  background-color: #19b2de;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   opacity: 0;
+  padding: 1rem;
 }
 
 .portfolio__item__wrapper:hover {
   opacity: 0.83;
 }
 
-.portfolio__item__wrapper h3, h4 {
+.portfolio__item__wrapper h3,
+h4 {
   color: white;
 }
 
