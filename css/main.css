@@ -105,6 +105,10 @@ a {
   text-decoration: none;
 }
 
+.banner__flag {
+  font-size: 1.125rem;
+}
+
 .mastodon__text {
   font-family: "Open Sans", sans-serif;
   font-size: 0.6rem;
@@ -163,6 +167,12 @@ header {
   display: inline;
   color: white;
   padding: 0;
+}
+
+.banner__flag__container {
+  position: absolute;
+  bottom: 4rem;
+  left: 4rem;
 }
 
 .flex {
@@ -391,6 +401,15 @@ header {
     grid-template-columns: repeat(6, 1fr);
   }
 
+  .banner__flag__container {
+    bottom: 8rem;
+    left: 8rem;
+  }
+
+  .banner__flag {
+    font-size: 1.5rem;
+  }
+
   .blog__item__date {
     padding: 0 0.8rem;
   }
@@ -444,7 +463,8 @@ header {
 @media screen and (min-width: 75em) {
   .page__header,
   .page__content,
-  .footer__container {
+  .footer__container,
+  .banner__wrapper {
     width: 75rem;
     margin: 0 auto;
   }
@@ -460,6 +480,20 @@ header {
 
 .banner__container {
   background-color: #ebebeb;
+  margin-bottom: 4rem;
+}
+
+.banner__wrapper {
+  position: relative;
+}
+
+.banner__flag {
+  background-color: white;
+  opacity: 0.83;
+  padding: 0.75rem 1rem;
+  border-left: 0.5rem solid;
+  width: fit-content;
+  margin: 0.25rem 0;
 }
 
 .intro__text {
@@ -657,6 +691,18 @@ h4 {
 }
 .nav__link:nth-child(5) {
   background-color: var(--darkblue);
+}
+
+.banner__flag:nth-child(1) {
+  border-color: var(--darkblue);
+}
+
+.banner__flag:nth-child(2) {
+  border-color: var(--red);
+}
+
+.banner__flag:nth-child(3) {
+  border-color: var(--yellow);
 }
 
 .page__footer {
