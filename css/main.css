@@ -230,6 +230,14 @@ header {
     grid-template-columns: repeat(3, 1fr);
   }
 
+  .s--col4 {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .services__item__wrapper{
+    grid-column: 2/-1;
+  }
+
   .bio__wrapper {
     grid-column: 2 / -1;
   }
@@ -502,7 +510,7 @@ header {
 .services__item__icon {
   order: -1;
   align-self: center;
-  padding: 1rem;
+  padding: 0.5rem 1rem;
 }
 
 .blog__item__title,
