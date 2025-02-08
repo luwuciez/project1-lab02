@@ -115,12 +115,12 @@ a {
   font-weight: bold;
 }
 
-.services__item__heading{
+.services__item__heading {
   color: #545454;
 }
 
-.services__item__text{
-  color:#a3a3a3;
+.services__item__text {
+  color: #a3a3a3;
 }
 
 /* ==========================================================================
@@ -244,7 +244,7 @@ header {
     grid-template-columns: repeat(4, 1fr);
   }
 
-  .services__item__wrapper{
+  .services__item__wrapper {
     grid-column: 2/-1;
   }
 
@@ -388,7 +388,7 @@ header {
     position: relative;
   }
 
-  #blog__item__img--first{
+  #blog__item__img--first {
     max-height: 60vh;
     object-fit: cover;
   }
@@ -486,7 +486,8 @@ header {
   .page__header,
   .page__content,
   .footer__container,
-  .banner__wrapper {
+  .banner__wrapper,
+  .bio__container {
     width: 75rem;
     margin: 0 auto;
   }
@@ -542,7 +543,7 @@ header {
   margin-bottom: 1rem;
 }
 
-.services__item__text{
+.services__item__text {
   margin: 1;
   text-align: justify;
 }
