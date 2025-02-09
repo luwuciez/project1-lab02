@@ -120,7 +120,7 @@ a {
 }
 
 .services__item__text {
-  color: #a3a3a3;
+  color: #939393;
 }
 
 /* ==========================================================================
@@ -215,6 +215,22 @@ header {
 .services__item {
   display: flex;
   flex-direction: column;
+}
+
+.clients__container {
+  margin-bottom: 4rem;
+}
+
+.clients__wrapper {
+  height: 8rem;
+  display: flex;
+  align-items: center;
+  padding: 2rem 1rem;
+  background-color: #f3f3f3;
+}
+
+.clients__img {
+  max-height: 100%;
 }
 
 /* 2.2 Small only   */
@@ -475,6 +491,10 @@ header {
   .header__nav {
     grid-column: 5 / -1;
   }
+
+  .clients__container {
+    gap: 2rem;
+  }
 }
 
 /* 2.6 Large only */
@@ -527,7 +547,7 @@ header {
 .section__heading {
   font-size: 1.75rem;
   line-height: 2rem;
-  margin-top: 4rem;
+  margin-top: 4.5rem;
   margin-bottom: 0.5rem;
 }
 
