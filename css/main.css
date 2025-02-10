@@ -303,6 +303,10 @@ header {
     grid-column: 1 / 1;
   }
 
+  .portfolio__container {
+    margin-bottom: 3rem;
+  }
+
   .blog__item__date {
     padding: 0.5rem 0.5rem;
   }
