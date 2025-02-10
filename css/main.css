@@ -566,6 +566,10 @@ header {
   .divider {
     grid-column: 3 / 5;
   }
+
+  .footer__container {
+    gap: 2rem;
+  }
 }
 
 /* 2.6 Large only */
