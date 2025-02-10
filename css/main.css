@@ -109,7 +109,6 @@ a {
   font-size: 1.125rem;
 }
 
-
 .mastodon__text {
   font-family: "Open Sans", sans-serif;
   font-size: 0.6rem;
@@ -123,7 +122,6 @@ a {
 .services__item__text {
   color: #939393;
 }
-
 
 /* ==========================================================================
    2. LAYOUT
@@ -220,7 +218,6 @@ header {
   flex-direction: column;
 }
 
-
 .clients__container {
   margin-bottom: 4rem;
 }
@@ -236,7 +233,6 @@ header {
 .clients__img {
   max-height: 100%;
 }
-
 
 /* 2.2 Small only   */
 @media screen and (max-width: 39.9375em) {
@@ -382,7 +378,6 @@ header {
     gap: 0.5rem;
     align-items: end;
   }
-  
 }
 
 /* 2.4 Medium only */
@@ -418,7 +413,7 @@ header {
     position: relative;
   }
 
-  #blog__item__img--first{
+  #blog__item__img--first {
     max-height: 60vh;
     object-fit: cover;
   }
@@ -529,11 +524,11 @@ header {
     opacity: 0;
     padding: 1rem;
   }
-  
+
   .portfolio__item__wrapper:hover {
     opacity: 0.83;
   }
-  
+
   .portfolio__item__wrapper h3,
   h4 {
     color: white;
@@ -581,7 +576,6 @@ header {
   border-left: 0.5rem solid;
   width: fit-content;
   margin: 0.25rem 0;
-
 }
 
 .intro__text {
@@ -619,7 +613,6 @@ header {
   padding: 0.5rem 1rem;
 }
 
-
 .blog__item__title,
 .blog__item__desc,
 .portfolio__item__title,
@@ -648,7 +641,7 @@ header {
 }
 
 .blog__item__wrapper svg,
-.portfolio__item__wrapper svg{
+.portfolio__item__wrapper svg {
   position: absolute;
 }
 
@@ -656,7 +649,8 @@ header {
   position: relative;
 }
 
-.blog__item__icon, .portfolio__item__icon {
+.blog__item__icon,
+.portfolio__item__icon {
   align-self: flex-end;
 }
 
@@ -745,6 +739,7 @@ header {
   height: 2rem;
   background-color: var(--yellow);
   flex-shrink: 0;
+  padding: 0.4rem;
 }
 
 /* ==========================================================================
