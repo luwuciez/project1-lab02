@@ -253,8 +253,15 @@ header {
     padding: 0.5rem 0.5rem;
   }
 
-  .blog__item__wrapper {
+  .blog__item__wrapper,
+  .portfolio__item__wrapper {
     padding: 0.6rem;
+  }
+
+  .portfolio__item__wrapper {
+    background-color: #19b2de;
+    color: white;
+    position: relative;
   }
 
 }
