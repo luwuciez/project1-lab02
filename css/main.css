@@ -336,29 +336,6 @@ header {
     gap: 0.5rem;
     align-items: end;
   }
-
-  .portfolio__item__wrapper {
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    position: absolute;
-    background-color: #19b2de;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    opacity: 0;
-    padding: 1rem;
-  }
-  
-  .portfolio__item__wrapper:hover {
-    opacity: 0.83;
-  }
-  
-  .portfolio__item__wrapper h3,
-  h4 {
-    color: white;
-  }
   
 }
 
@@ -373,7 +350,8 @@ header {
     padding: 0 0.7rem;
   }
 
-  .blog__item__wrapper {
+  .blog__item__wrapper,
+  .portfolio__item__wrapper {
     padding: 0.5rem;
   }
 
@@ -404,6 +382,12 @@ header {
   }
   #blog__item__desc--first {
     font-size: 0.8rem;
+  }
+
+  .portfolio__item__wrapper {
+    background-color: #19b2de;
+    color: white;
+    position: relative;
   }
 }
 
@@ -471,6 +455,29 @@ header {
 
   .header__nav {
     grid-column: 5 / -1;
+  }
+
+  .portfolio__item__wrapper {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    background-color: #19b2de;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    opacity: 0;
+    padding: 1rem;
+  }
+  
+  .portfolio__item__wrapper:hover {
+    opacity: 0.83;
+  }
+  
+  .portfolio__item__wrapper h3,
+  h4 {
+    color: white;
   }
 }
 
