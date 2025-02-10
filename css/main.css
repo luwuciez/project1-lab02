@@ -105,11 +105,25 @@ a {
   text-decoration: none;
 }
 
+.banner__flag {
+  font-size: 1.125rem;
+}
+
+
 .mastodon__text {
   font-family: "Open Sans", sans-serif;
   font-size: 0.6rem;
   font-weight: bold;
 }
+
+.services__item__heading {
+  color: #545454;
+}
+
+.services__item__text {
+  color: #939393;
+}
+
 
 /* ==========================================================================
    2. LAYOUT
@@ -117,7 +131,8 @@ a {
 
 /* Helper to display empty layout containers*/
 
-/* div,
+/* 
+div,
 main,
 section,
 footer,
@@ -165,6 +180,12 @@ header {
   padding: 0;
 }
 
+.banner__flag__container {
+  position: absolute;
+  bottom: 4rem;
+  left: 4rem;
+}
+
 .flex {
   display: flex;
   flex-direction: column;
@@ -199,6 +220,24 @@ header {
   flex-direction: column;
 }
 
+
+.clients__container {
+  margin-bottom: 4rem;
+}
+
+.clients__wrapper {
+  height: 8rem;
+  display: flex;
+  align-items: center;
+  padding: 2rem 1rem;
+  background-color: #f3f3f3;
+}
+
+.clients__img {
+  max-height: 100%;
+}
+
+
 /* 2.2 Small only   */
 @media screen and (max-width: 39.9375em) {
   .s--hide {
@@ -220,6 +259,14 @@ header {
 
   .s--col3 {
     grid-template-columns: repeat(3, 1fr);
+  }
+
+  .s--col4 {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .services__item__wrapper {
+    grid-column: 2/-1;
   }
 
   .bio__wrapper {
@@ -263,7 +310,6 @@ header {
     color: white;
     position: relative;
   }
-
 }
 
 /* 2.3 medium and up */
@@ -413,6 +459,15 @@ header {
     grid-template-columns: repeat(6, 1fr);
   }
 
+  .banner__flag__container {
+    bottom: 8rem;
+    left: 8rem;
+  }
+
+  .banner__flag {
+    font-size: 1.5rem;
+  }
+
   .blog__item__date {
     padding: 0 0.8rem;
   }
@@ -457,6 +512,10 @@ header {
     grid-column: 5 / -1;
   }
 
+  .clients__container {
+    gap: 2rem;
+  }
+
   .portfolio__item__wrapper {
     width: 100%;
     height: 100%;
@@ -489,6 +548,9 @@ header {
 @media screen and (min-width: 75em) {
   .page__header,
   .page__content,
+  .footer__container,
+  .banner__wrapper,
+  .bio__container,
   .footer__container {
     width: 75rem;
     margin: 0 auto;
@@ -505,6 +567,21 @@ header {
 
 .banner__container {
   background-color: #ebebeb;
+  margin-bottom: 4rem;
+}
+
+.banner__wrapper {
+  position: relative;
+}
+
+.banner__flag {
+  background-color: white;
+  opacity: 0.83;
+  padding: 0.75rem 1rem;
+  border-left: 0.5rem solid;
+  width: fit-content;
+  margin: 0.25rem 0;
+
 }
 
 .intro__text {
@@ -515,7 +592,7 @@ header {
 .section__heading {
   font-size: 1.75rem;
   line-height: 2rem;
-  margin-top: 4rem;
+  margin-top: 4.5rem;
   margin-bottom: 0.5rem;
 }
 
@@ -530,6 +607,18 @@ header {
   font-size: 1rem;
   margin-bottom: 1rem;
 }
+
+.services__item__text {
+  margin: 1;
+  text-align: justify;
+}
+
+.services__item__icon {
+  order: -1;
+  align-self: center;
+  padding: 0.5rem 1rem;
+}
+
 
 .blog__item__title,
 .blog__item__desc,
@@ -680,6 +769,18 @@ header {
 }
 .nav__link:nth-child(5) {
   background-color: var(--darkblue);
+}
+
+.banner__flag:nth-child(1) {
+  border-color: var(--darkblue);
+}
+
+.banner__flag:nth-child(2) {
+  border-color: var(--red);
+}
+
+.banner__flag:nth-child(3) {
+  border-color: var(--yellow);
 }
 
 .page__footer {
